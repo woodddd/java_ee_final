@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>overflow 프로퍼티</title>
+<style type="text/css">
+p{
+	width: 15em; /* 현재글자크기의 15배의 길이를 만들어달라 */
+	height: 3em;
+	border: 1px solid lightgray;
+}
+.hidden{overflow: hidden;}
+.visible{overflow:visible;}
+.scroll{overflow:scroll;}
+.auto{overflow:auto;}
+</style>
+</head>
+<body>
+<p class="hidden">overflow에 hidden 값을 적용하면 박스를 넘어가는 내용이 잘려 보이지 않습니다.</p><br>
+<p class="visible">overflow에visible 값을 적용하면 콘텐트가 박스를 넘어가서도 출력되니다.</p><br>
+<p class="scroll">overflow에scroll 값을 적용하면 박스에 스크롤바를 붙여 출력합니다.</p><br> <!-- 내용이 많던 적던 스크롤바 출력 -->
+<p class="auto">overflow에 auto 값을 적용하면 콘탠트가 박스를 넘어갔을 때 박스에 스크롤바를 붙여 출력합니다.</p><br> <!-- 내용이 넘칠때에만 스크롤바가 생성됨 -->
+</body>
+</html>

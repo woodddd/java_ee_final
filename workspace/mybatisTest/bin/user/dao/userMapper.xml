@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="userSQL">
+ 
+ <!-- 이름이 틀릴경우 강제 맵핑 -->
+ <!-- <resultMap type="user.bean.UserDTO" id="userResult">  별칭을 달았으므로 아래이ㅡ것과 동일-->
+ <resultMap type="user" id="userResult">
+ 	<!-- <result property="UserDTO 필드명" column="오라클 컬럼명" / ></result> -->
+ 	<result property="name" column="NAME"/>
+ 	<result property="id" column="ID"/>
+ 	<result property="pwd" column="PWD"/>
+ </resultMap>
+ 
+ 
+ <insert id="write" parameterType="user">
+ 	insert into usertable values(#{name}, #{id}, #{pwd})
+ </insert> <!-- parameterType 는 들어오는 데이터의 자료형을 입력해야한다.풀쿼리네임으로 -->
+ 
+ <select id="getUser" parameterType="java.lang.String" resultType="user">
+ 	select * from usertable where id=#{id}
+ </select> <!-- java.lang은 기본이기 때문에 생략가능 -->
+ 
+ <select id="getUserList" resultMap="userResult"> 
+	select * from usertable
+ </select>  <!-- select 의 결과를 자체적으로 rs에 담고있음 그 후에 UserDAO 로 값이 넘어갈 때, rs에 있는 값을 알아서 UserDTO 에 담아서 리스트에 저장해줌. -->
+ <!-- select해서 나온 결과인 rs를 UserDTO 컬럼과의 매핑으 자동으로 해준다. 그리고 UserDTO에 자동으로 담은 후 List 에 저장한다. 그래서 resultType 에 들어가는 건, 필드명과 매핑을 할 UserDTO 가된다.-->
+ 
+ <update id="modify" parameterType="java.util.Map">
+ 	update usertable set name = #{name}, pwd = #{pwd} where id = #{id}
+ </update> <!-- 자료형은 map의 자료형을 써주어야함. -->
+ 
+ <delete id="delete" parameterType="java.lang.String">
+ 	delete from usertable where id=#{id}
+ </delete>
+ 
+ <!-- 
+ 내가한거
+ <select id="search" parameterType="user" resultType="user">
+ 	select * from usertable where 
+ 	<if test="id != null">id like '%'|| #{id} ||'%'</if>
+ 	<if test="name != null">name like '%'|| #{name} ||'%'</if>
+ 	
+ </select> -->
+ 
+ <select id="search" parameterType="java.util.Map" resultType="user">
+ 	select * from usertable where ${columnName} like '%'||#{value }||'%'
+ </select>
+ </mapper>

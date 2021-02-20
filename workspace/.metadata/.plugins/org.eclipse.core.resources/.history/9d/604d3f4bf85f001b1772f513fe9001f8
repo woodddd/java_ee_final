@@ -1,0 +1,574 @@
+package miniProject;
+
+import java.awt.BasicStroke;
+import java.awt.BorderLayout;
+import java.awt.Canvas;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseMotionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Stack;
+
+import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+import javax.tools.Tool;
+
+
+
+public class WormSelect extends JFrame implements ActionListener,Runnable { 
+   private JRadioButton smile, beauty, mad, green, blue, red, yellow, orange, magenta;
+   private JLabel face, color, score1, score2;
+   private JButton startBtn;
+   private JTextField scoreT;
+   private Image food, image, image2, bg;
+   
+   private String game;
+   
+   
+   private int foodNum = 100 ;
+   private int x, y, score, mouseX, mouseY;
+   private int length = 3;
+   int move;
+   
+   private JPanel p2, foodP, gameAct;
+   
+   private int imageS = 12;
+   private List<WormDTO> stack = new Stack<WormDTO>(); //지렁이 좌표,
+   private ArrayList<WormDTO> foodList = new ArrayList<WormDTO>(); // 먹이 좌표
+   
+   private Thread t;
+   
+   
+   public WormSelect() {
+      super("지렁이 캐릭터 선택");
+      // JLabel
+      face = new JLabel("☆얼굴 선택");
+      color = new JLabel("☆컬러 선택");
+      score1 = new JLabel("score1");
+      score2 = new JLabel("score2");
+      // JRadioButton
+      smile = new JRadioButton("웃는 얼굴");
+      beauty = new JRadioButton("예쁜 얼굴");
+      mad = new JRadioButton("화난 얼굴");
+
+      red = new JRadioButton("빨강");
+      orange = new JRadioButton("주황");
+      yellow = new JRadioButton("노랑");
+      green = new JRadioButton("초록");
+      blue = new JRadioButton("파랑");
+      magenta = new JRadioButton("보라");
+      bg = Toolkit.getDefaultToolkit().getImage("lib/backG.png");
+
+      startBtn = new JButton(new ImageIcon("image/play.png"));
+
+      faceG = new ButtonGroup();
+      faceG.add(smile);
+      faceG.add(beauty);
+      faceG.add(mad);
+      
+      scoreT = new JTextField();
+
+      ButtonGroup colorG = new ButtonGroup();
+      colorG.add(red);
+      colorG.add(orange);
+      colorG.add(yellow);
+      colorG.add(green);
+      colorG.add(blue);
+      colorG.add(magenta);
+
+      t = new Thread(this);
+
+      // ========================================================================================
+      // 초기 랜덤좌표
+      while (stack.size() < 3) {
+         WormDTO dto = new WormDTO();
+
+         if (stack.size() == 0) {
+            dto.setX((int) (Math.random() * 371 + 215));// 가운데 좌표 계산한 숫자임.
+            dto.setY((int) (Math.random() * 301 + 250));// 아래
+
+         } else if (stack.size() == 1) {
+            dto.setX(stack.get(0).getX());
+            dto.setY(stack.get(0).getY() - (int) (imageS * 0.75));// 몸통이 겹치는 비율은 4/1 임
+
+         } else if (stack.size() == 2) {
+            dto.setX(stack.get(0).getX());
+            dto.setY(stack.get(1).getY() - (int) (imageS * 0.75));
+         }
+         stack.add(dto);
+
+      } // while
+
+//JPanel
+
+//========================================================================================
+      p2 = new JPanel() {
+
+         @Override
+         public void paint(Graphics g) {
+            setOpaque(false);
+
+//            g.drawImage(image2, 200, 100, this);
+//            g.drawImage(image2, 130, 85, this);
+//            g.drawImage(image2, 60, 50, this);
+//            g.drawImage(image, 0, 0, this);
+
+         }
+      };
+
+      p2.setBounds(200, 350, 300, 200);
+      
+      
+      
+      
+        JPanel p = new JPanel() {
+            public void paintComponent(Graphics g) {
+               
+               
+               Graphics2D bufferG = (Graphics2D) g;
+
+
+               bufferG.drawImage(bg, 10, 85, 1060, 600, this);
+               setOpaque(false);
+               super.paintComponent(g);
+            }
+         };
+
+//========================================================================================
+      foodP = new JPanel() {
+         @Override
+         public void paint(Graphics g) {
+
+//             System.out.println(1);
+            food = Toolkit.getDefaultToolkit().getImage("image/food.png");
+            for (int i = 0; i < foodList.size(); i++) {
+               g.drawImage(food, foodList.get(i).getX(), foodList.get(i).getY(), 10, 10, this);
+            }
+
+            setOpaque(false);
+         }
+      };
+
+//========================================================================================
+
+      gameAct = new JPanel() {
+
+         @Override
+         public void paint(Graphics g) {
+            Graphics2D g2 = (Graphics2D) g;
+
+            g.setColor(new Color(200, 200, 200)); // 그려주는 그림 색 변경
+            g2.setStroke(new BasicStroke(10)); // 선두깨 조절 메소드
+            g.drawRect(0, 0, getWidth(), getHeight());
+
+            // if 먹이를 먹었을 때, 먹이를 먹었으면 먹이 먹은 갯수를 비교하여 사이즈업, 먹이를 먹지 않았으면
+            for (int i = 0; i < stack.size(); i++) {
+
+               g.drawImage(image, stack.get(0).getX(), stack.get(0).getY(), imageS, imageS, this);
+               if (i != 0) {
+                  g.drawImage(image2, stack.get(i).getX(), stack.get(i).getY(), imageS, imageS, this);
+               }
+
+            }
+            setOpaque(false);
+         }// paint
+      };// gameAct !!
+
+//========================================================================================           
+
+      // 좌표 설정
+      score1.setBounds(30, 10, 70, 30);
+      scoreT.setBounds(30,50,70,30);
+      face.setBounds(1100, 10, 70, 30);
+      smile.setBounds(1100, 40, 90, 30);
+      beauty.setBounds(1100, 70, 90, 30);
+      mad.setBounds(1100, 100, 90, 30);
+
+      color.setBounds(1100, 130, 70, 30);
+      red.setBounds(1100, 160, 60, 30);
+      orange.setBounds(1100, 190, 60, 30);
+      yellow.setBounds(1100, 220, 60, 30);
+      green.setBounds(1100, 250, 60, 30);
+      blue.setBounds(1100, 280, 60, 30);
+      magenta.setBounds(1100, 310, 60, 30);
+      startBtn.setBounds(520, 687, 100, 70);
+      foodP.setBounds(10, 85, 1060, 600);
+      gameAct.setBounds(10, 85, 1060, 600);
+      p.setLayout(null);
+//           p.setLayout(new FlowLayout(FlowLayout.RIGHT));
+      p.add(face);
+      p.add(smile);
+      p.add(beauty);
+      p.add(mad);
+      p.add(color);
+      p.add(green);
+      p.add(blue);
+      p.add(red);
+      p.add(orange);
+      p.add(yellow);
+      p.add(magenta);
+      p.add(startBtn);
+      p.add(score1);
+      p.add(scoreT);
+//           p.setBounds(150, 10, p.getWidth(), p.getHeight());
+
+      add(foodP);
+
+      add(p2);
+      add(gameAct);
+
+      add(p);
+
+      setBounds(500, 200, 1210, 800);
+      setBackground(new Color(230, 240, 255));
+      setVisible(true);
+      setResizable(false);
+     
+      addWindowListener(new WindowAdapter() {
+         @Override
+         public void windowClosing(WindowEvent e) {
+            System.exit(0);
+         }
+      });
+
+      beauty.setSelected(true);
+      green.setSelected(true);
+
+      smile.addActionListener(this);
+      beauty.addActionListener(this);
+      mad.addActionListener(this);
+
+      red.addActionListener(this);
+      orange.addActionListener(this);
+      yellow.addActionListener(this);
+      green.addActionListener(this);
+      blue.addActionListener(this);
+      magenta.addActionListener(this);
+
+      startBtn.addActionListener(this);
+
+      new Login();
+      // ==============================================================================================================================
+      gameAct.addMouseMotionListener(new MouseAdapter() {
+         @Override
+         public void mousePressed(MouseEvent e) {
+
+            if (e.getSource() != null) {
+               move = 15;
+               System.out.println("p" + move);
+            }
+
+         }
+
+         @Override
+         public void mouseReleased(MouseEvent e) {
+            if (e.getSource() != null) {
+               move = 10;
+               System.out.println("r" + move);
+            }
+         }
+
+         @Override
+
+         public void mouseMoved(MouseEvent e) {
+
+            mouseX = e.getX();
+            mouseY = e.getY();
+
+         }
+      });
+   }// WormSelect()
+
+   ButtonGroup faceG;
+
+   @Override
+   public void actionPerformed(ActionEvent e) {
+      if (e.getSource() == startBtn) {
+
+         foodSet();
+         p2.setVisible(false);
+         faceG.clearSelection();
+         smile.setEnabled(false);
+         game = "start";
+
+         t.start();
+
+      }
+
+      if (smile.isSelected()) {
+         if (red.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/smileR.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyR.png");
+         }
+         if (orange.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/smileO.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyO.png");
+         }
+         if (yellow.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/smileY.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyY.png");
+         }
+         if (green.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/smileG.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyG.png");
+         }
+         if (blue.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/smileB.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyB.png");
+         }
+         if (magenta.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/smileM.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyM.png");
+         }
+         p2.repaint();
+      }
+
+      if (beauty.isSelected()) {
+         if (red.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/beautyR.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyR.png");
+         }
+         if (orange.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/beautyO.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyO.png");
+         }
+         if (yellow.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/beautyY.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyY.png");
+         }
+         if (green.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/beautyG.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyG.png");
+         }
+         if (blue.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/beautyB.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyB.png");
+         }
+         if (magenta.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/beautyM.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyM.png");
+         }
+         p2.repaint();
+      }
+      if (mad.isSelected()) {
+         if (red.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/madR.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyR.png");
+         }
+         if (orange.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/madO.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyO.png");
+         }
+         if (yellow.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/madY.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyY.png");
+         }
+         if (green.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/madG.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyG.png");
+         }
+         if (blue.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/madB.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyB.png");
+         }
+         if (magenta.isSelected()) {
+            image = Toolkit.getDefaultToolkit().getImage("image/madM.png");
+            image2 = Toolkit.getDefaultToolkit().getImage("image/bodyM.png");
+         }
+         p2.repaint();
+      }
+
+   }
+
+     public void foodSet() {
+//      ArrayList<ScoreDTO> foodList = new ArrayList<ScoreDTO>();
+      for(int i=0; i < foodNum; i ++) {
+         WormDTO dto = new WormDTO();
+         
+         x = (int)(Math.random()*1060-40+1)+40;
+         y = (int)(Math.random()*600-130+1)+130;
+         
+        dto.setX(x);
+        dto.setY(y);
+        
+         foodList.add(dto);
+         
+      }
+      foodP.repaint();
+//      System.out.println(foodList.size());
+      
+   }
+   
+   
+ 
+   
+   
+   private void wormDie() {
+       // thread.close();
+          // worm 머리 중심좌표
+          int x = stack.get(0).getX() + (imageS / 2);
+          int y = stack.get(0).getY() + (imageS / 2);
+
+          // 바깥 태두리에 닿았을때
+
+          if (x < gameAct.getX() || x > gameAct.getWidth() || y < gameAct.getY() || y > gameAct.getHeight()) {
+             
+             JOptionPane.showMessageDialog(this, "점수 :"+score+"점 입니다", "게임종료", JOptionPane.PLAIN_MESSAGE);
+             
+             if(JOptionPane.YES_OPTION != -1) {
+                System.exit(0);
+             }
+             
+          }
+
+    }
+
+
+
+   
+   @Override
+   public void run() {
+      //
+      
+      //먹이 변수
+      int hx;
+      int hy;
+      int fx;
+      int fy;
+      double distance;
+      double radiusSum;
+      
+      
+      //if(game.equals("start")) {
+    	  
+      
+      while(true) {
+//         System.out.println(count+"번째");
+         
+         WormDTO dto = new WormDTO();
+           int x= 0;
+           int y = 0;
+           
+           
+            move = 10;
+            int headX = stack.get(0).getX() + (imageS / 2);//머리 중심좌표
+            int headY = stack.get(0).getY() + (imageS / 2);
+
+            //이동량에 따른 비율 구현
+            int a = (mouseX - headX) * move;
+            int b = (mouseY - headY) * move;
+            
+            //이동거리 c 구현
+            double c = Math.sqrt(Math.pow(mouseX - headX, 2) + Math.pow(mouseY - headY, 2));
+
+            //x축 이동량, y축 이동량
+            x =  (int)Math.round((a / c));
+            y =  (int)Math.round((b / c));
+
+            dto.setX(stack.get(0).getX()+x);
+            dto.setY(stack.get(0).getY()+y);
+           
+            stack.add(0, dto);//x,y 만 가지고 있는 dto를 생성한 후 0번 인덱스에 dto 객체를 삽입한다.  그 후 dto안의 x,y 값으로 repaint 를 실행하고 그림이 다시 그려지면
+            if(length != stack.size()) {
+               stack.remove(stack.size() - 1);
+            }
+            //wormSizeSet();
+            wormDie();
+            gameAct.repaint();
+            
+            System.out.println("stack.size()" + stack.size() );
+            System.out.println("imageS" + imageS);
+            
+            //클라이언트 에서 필요한 값 저장
+            
+            
+            //먹이 스레드 시간마다 재생성
+            
+            //=======================먹이 먹는 부분
+            
+            for(int i = 0; i < foodNum ; i++) {
+               //헤드 x,y 증심좌표
+               hx = stack.get(0).getX() + (imageS/ 2);
+               hy = stack.get(0).getY() + (imageS/ 2);
+               
+               //먹이 x,y 중심좌표
+               fx = foodList.get(i).getX() + (10 / 2);    
+               fy = foodList.get(i).getY() + (10 / 2);
+               
+               distance = Math.sqrt(Math.pow(hx - fx, 2)+Math.pow(hy- fy, 2));
+               radiusSum = (imageS / 2) + (10 / 2); //10은 먹이의 크기 /2 는 먹이의 반지름을 구하기 위함.
+               
+               if(distance <= radiusSum) { // 원이 겹친 것.
+                  foodList.remove(i);
+                  foodNum --;
+                  score++;
+                  if(length < 100 && score % 10 == 0) {
+                     length ++;
+//                     length = length +10;
+                     if(imageS < 30) {
+                        imageS = imageS + 2;  
+                     }
+                     
+                  }
+//                  System.out.println(foodList.size());
+               }//if
+               
+            }//for
+            
+            scoreT.setText(score+"");
+            
+//            ======Thread.sleep 이 6번 실행 되면 먹이를 재생성해라. 스레드타임 * 6 = 먹이생성시간
+                if (foodNum < 80) {
+                     WormDTO foodDto = new WormDTO();
+						/*
+						 * int cx = (int)(Math.random()*710-40+1)+40; int cy =
+						 * (int)(Math.random()*510-130+1)+130;
+						 */
+                     int cx = (int)(Math.random()*1060-40+1)+40;
+                     int cy = (int)(Math.random()*600-130+1)+130;
+                     foodDto.setX(cx);
+                     foodDto.setY(cy);
+                    
+                     foodList.add(foodDto);
+                     foodNum++;
+                   }//if
+
+            
+            
+            try {
+               
+               
+            Thread.sleep(50);
+         } catch (InterruptedException e) {
+            
+            e.printStackTrace();
+         }
+//            System.out.println(count+"번 째 끝");
+           
+      }//while
+      //}//if
+   }//run
+
+   
+   
+}//

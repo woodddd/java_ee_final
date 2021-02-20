@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{
+	display:inline-block; /* inline으로 잡게되면 길이속성을 잡을 수 없음 */
+	width: 50px;
+	height: 50px;
+	border: 1px solid lightgray;
+	text-align:center;
+	color: whirte;
+	background: red;
+}
+#down:hover{
+	position: relative; /* 자기자신의 위치를 기준으로 잡는 것 */
+	left:20px; /* 왼쪽기준 + 20 */
+	top:20px;
+	background: green;
+}
+#up:hover{
+	position: relative;
+	right:20px;
+	bottom:20px;
+	/* left:-20px;
+	top:-20px; */
+	background: lightgreen;
+}
+</style>
+</head>
+<body>
+<h3>상대 배치, relative</h3>
+<hr>
+	<div>T</div>
+	<div id="down">h</div>
+	<div>a</div>
+	<div>n</div>
+	<div id="up">k</div>
+	<div>s</div>
+	
+</body>
+</html>

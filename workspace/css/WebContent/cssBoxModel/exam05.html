@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+p {
+	background: yellow;
+	width: 200px;
+	height: 60px;
+	padding: 10px;
+	border: 20px solid lightgray;
+}
+#round {
+	border-image: url("../img/border.png") 30 round; /* 30px로 이미지를 자른 후 테두리에 잡아라 round - 테두리 */
+}
+#repeat{
+	border-image: url("../img/border.png") 30 repeat; /* repeat - 반복해서잡아라 */
+}
+#stretch{
+	border-image: url("../img/border.png") 30 stretch;
+}
+</style>
+</head>
+<body>
+<h3>이미지 테두리 만들기</h3>
+<hr>
+다음은 원본 이미지입니다.<br>
+<img src="../img/border.png" alt="원본">
+<hr>
+<P>20x20 크기의 회색 테두리를 가진 P 태그</P>
+<p id="round">round 스타일 이미지 테두리</p>
+<p id="repeat">repeat 스타일 이미지 테두리</p>
+<p id="stretch">stretch 스타일 이미지 테두리</p>
+</body>
+</html>
+
+
+<!-- 
+- 테두리 이미지의 원본은 가로 90픽셀, 세로 90픽셀의 ".png" 파일로, 8개의 이미지가 사각형의 테두리를 이루고 있다.
+
+- 이미지 하나의 크기에 맞추기 위해, 90을 3으로 나눈 30을 슬라이스 크기로 사용하여 원본 이미지를 모서리와 테두리구역으로 나눈다. 
+
+- 마지막으로 반복 값에  round를 지정해 모서리가 끊기거나 잘리지 않도록 설정한다.
+-->

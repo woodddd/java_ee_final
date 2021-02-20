@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import url(common.css);
+
+#wrap {
+	width: 760px;
+	margin: 0 auto;
+	background: url(../../img/bg_snb.png) repeat-y 170px 0;
+}
+
+body > #wrap { /* wrap 영역의 높이를 브라우저 높이에 맞게 꽉 채운다*/
+	height: auto;
+	min-height: 100%;
+}
+/* header start */
+#header{
+	position: relative; /* 부모를 중심으로 하기 때문에 absolute가 리려면 부모가 relative로 잡혀 있어야 한다. */
+	padding-bottom: 99px;
+	border-bottom: 1px solid #cccccc;
+	background: #fff url(../../img/bg_header.png) no-repeat 50% 100%;
+}
+.logo {
+	padding: 12px 0 12px 26px;
+}
+.logo a {
+	display: block;
+	overflow: hidden;
+	width: 90px;
+	height: 30px;
+	background: url(../../img/logo.png) no-repeat;
+	text-indent: -9999em; /* 이미지가 나타나면 logo 라는 텍스트는 필요가 없어짐. -> 양수: 들여쓰기, 음수: 내어쓰기(화면밖으로 내버리는것) */
+}
+.topnav{
+	position: absolute; /* 상위태그가 relative가 설정되어 있어야 한다. */
+	right: 35px;
+	top: 18px;
+	
+}
+.topnav dd {
+	float: left;
+	padding-right: 11px;
+	margin-right: 10px;
+	background: url(../../img/bg_topnav.png) no-repeat 100% 50%;
+}
+.topnav dd:last-child{
+	padding-right: 0;
+	margin-right: 0;
+	background: none;
+}
+.topnav dd a{
+	color: black;
+	font-size: 0.9em;
+}
+
+.mainnav {
+	padding-left: 50px;
+	background-color: #005B9B;
+}
+.mainnav:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.mainnav li{
+	float: left;
+}
+.mainnav li a {
+	display: block;
+	padding: 0 13px;
+	background-color: #005B9B;
+	color: #ffffff;
+	font: bold 16px/40px 'Nanum Gothic',sans-serif; /* font: px / px -> font-size/line-height (줄높이) */
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.mainnav li a:hover{
+	color: #660000;
+	background-color: #ffcc00;
+}
+
+/* header end */
+
+/* container start */
+
+#container{
+	
+	padding-bottom: 121px;
+}
+#container:after{ /* 컨테이너가 끝나는 시점에 */
+	content: "";
+	display:block;
+	clear:both;
+}
+/* snb start */
+.snb {
+	float: left;
+	width: 170px
+}
+.snb h2 {
+	padding: 28px 14px 8px 0;
+	margin-left: 11px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #cccccc;
+	color: #005B9B;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: right;
+}
+.snb ul {
+	margin-left:11px;
+}
+.snb ul a {
+	display: block;
+	padding-right: 14px;
+	color: #005B9B;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+	text-decoration: none;
+	line-height: 30px; /* 줄높이 */
+}
+.snb ul a:hover{
+	color: #660000;
+	text-decoration: underline;
+}
+/* snb end */
+
+/* content start */
+#content {
+	position: relative;
+	float: right;
+	width: 560px;
+}
+.locate {
+	position: absolute;
+	right: 28px;
+	top: 26px;
+	color: #ccc;
+	font-size: 0.9em;
+	word-spacing: 0.3em; /* 간격을 띄워주라 */
+}
+.locate a{
+	color: #666666;
+}
+.locate strong{
+	font-weight: normal;
+	color: #666666;
+	word-spacing: 0em;
+}
+
+#content h2{
+	padding: 24px 0;
+	color: #005B9B;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+#content .thum{
+	float: left;
+	margin-left: 14px;
+}
+#content .thum img{
+	width: 114px;
+	height: 111px;
+	border: 1px solid #cccccc;
+}
+#content .text{
+	margin-left: 148px;
+	
+}
+#content .text p {
+	margin-bottom: 15px;
+	line-height: 1.4em;
+}
+/* content end */
+/* container end */
+
+/* footer start */
+/* footer영역은 콘텐트의 길이가 길어지던, 짧아지던 항상 아래에 표시되어야 한다. */
+
+#footer {
+	border: 1px solid blue;
+	
+	position: relative;
+	margin-top: -101px;
+	background-color: #fff;
+}
+#footer .footerArea {
+	border: 1px solid red;
+	
+	border-top: 1px solid #cccccc;
+	padding: 18px 0 40px 0;
+	width: 760px;
+	height: 100px;
+	margin: 0 auto;
+	color:#666;
+	font-size: 0.9em;
+}
+#footer .footerArea:after{
+	content: ""; /* 블럭해제 */	
+	display: block;
+	clear: both;
+}
+.btmnav {
+	float: right;
+	margin-right: 30px;
+}
+.btmnav dd{
+	float: left;
+}
+.btmnav dd:after{
+	content: "|";
+	padding: 0 0.7em;
+	color: #999;
+}
+.btmnav dd:last-child:after {
+	content: "";
+	padding: 0 0;
+}
+
+.copy{
+	float: left;
+	line-height: 1.8;
+	margin-left: 20px;
+	margin-top: 18px;
+}
+/* footer end */

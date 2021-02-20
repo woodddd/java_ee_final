@@ -1,0 +1,9 @@
+@charset "UTF-8";
+div#displayArea {
+	/* visibility: hidden; */
+	display: none;/* 영역을 없앤다. 그러다가 표시 버튼을 누르면 블럭을 지정해 주어서 영역을 잡아준다. */
+	width: 200px;
+	height: 200px;
+	border-color: #6699ff;
+	border-style:double;
+}

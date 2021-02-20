@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function printTime(){
+   var days = ["일", "월", "화", "수", "목", "금", "토"];
+   var today = new Date();
+   
+   var yy = today.getFullYear();
+   var mm = today.getMonth() + 1;//Month는 0부터 출발하기 때문에 +1을 해줘야한다.
+   var dd = today.getDate();
+   var i= today.getDay(); //요일(0~6)
+   var day = days[i];
+   var hh = today.getHours();
+   var mi = today.getMinutes();
+   var ss = today.getSeconds();
+   
+   var result = yy+"-"+mm+"-"+dd+" "+day+"요일 "+hh+":"+mi+":"+ss;
+   
+   document.getElementById("timer").innerHTML = result;
+}
+
+function startTime(){
+   setInterval(printTime, 1000); //1초마다 printTime를 호출
+   /* setTimeout(printTime, 1000); */
+   /* setTimeout은 특정기능을 몇초후에 수행하고싶을때 사용 */
+}
+</script>
+</head>
+<body onload="startTime()">
+<h1 id="timer">현재시간을 보여줍니다</h1>
+</body>
+</html>
+
+
+
+
+
+

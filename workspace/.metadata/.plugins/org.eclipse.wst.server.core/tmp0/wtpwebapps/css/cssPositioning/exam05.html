@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* { /* * 은 모든 태그를 의미함 */
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 12px Tahoma, sans-self; /* 만약 Tahoma 폰트가 없다면 sans-self 필드를 지정해라 */
+}
+li {
+	list-style: none;
+}
+#wrap{
+	width: 800px;
+	margin: 0 auto; /* 기존 top-right-bottom-left 순이지만 인자를 2개 사용핳게 되면 top,bottom - right,left 를 말하는 것임. 결국 좌우측을 가운데로 정렬하라는 말임*/
+	background-color: silver;
+}
+#header {
+	background-color:red;
+}
+#container{
+	background-color: cyan;
+}
+#container:after { /* 가상클래스 뒤쪽에 */
+	content: "ㅎㅎ";
+	display: block;
+	clear: both;
+}
+.nav {
+	float: left; width: 180px;
+	background-color: lime;
+}
+.content {
+	float: right;
+	width: 600px;
+	background-color: lime;
+}
+#footer {
+	margin-top: 30px;
+	background-color:green;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<h1>LOGO</h1>
+		<p>This website is...</p>
+	</div>
+	
+	<div id="container">
+		<div class="nav">
+			<ul>
+				<li><a href="#">Menu 1</a></li>
+				<li><a href="#">Menu 2</a></li>
+				<li><a href="#">Menu 3</a></li>
+			</ul>
+		</div>
+		
+		<div class="content">
+			<h2>Content Title</h2>
+			<p>
+			Pellentesque habitant morbi tristique senectus et netus    et malesuada fames 
+         ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+         amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi 
+         vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper 
+         pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, 
+         wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, 
+         sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. 
+         Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, 
+         eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt 
+         quis, accumsan porttitor, facilisis luctus, metus
+			</p>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<address>Seoul, Korea</address> <!-- address태그는 기본적으로 이탤릭 효과가 적용 -->
+	</div>
+</div>
+
+</body>
+</html>

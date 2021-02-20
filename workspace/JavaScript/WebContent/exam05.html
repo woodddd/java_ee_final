@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+let num = 5;
+
+num ++;
+document.write("num = " + num + "<br>");
+
+++num;
+document.write("num = " + num + "<br>");
+
+/* 변수가 혼자 독단으로 사용될때엔 ++가 뒤에붙어있으나 앞에붙어있으나 동일함*/
+
+let num2 = num++;
+/*
+위의 문장은 이 문장과 동일
+let num2 = num;
+num++; */
+document.write("num = " + num + "&emsp; num2 = " + num2 + "<br>");
+
+let num3 = --num;
+
+document.write("num = " + num + "&emsp; num2 = " + num3 + "<br>");
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+<!-- 증감연산자 -->

@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [05/Dec/2020:00:13:16 +0900] "GET /mvcboard/board/boardReplyForm.do?pseq=21&pg=1 HTTP/1.1" 200 1139
+0:0:0:0:0:0:0:1 - - [05/Dec/2020:00:13:16 +0900] "GET /mvcboard/js/board.js HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2020:21:03:24 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [05/Dec/2020:21:03:31 +0900] "GET /mvcboard/main/index.do HTTP/1.1" 200 385
+0:0:0:0:0:0:0:1 - - [05/Dec/2020:21:03:31 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [05/Dec/2020:21:03:38 +0900] "GET /mvcboard/board/boardList.do?pg=1 HTTP/1.1" 200 3585
+0:0:0:0:0:0:0:1 - - [05/Dec/2020:21:03:38 +0900] "GET /mvcboard/image/apple.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [05/Dec/2020:21:03:38 +0900] "GET /mvcboard/css/member.css HTTP/1.1" 304 -
+127.0.0.1 - - [05/Dec/2020:21:04:06 +0900] "GET / HTTP/1.1" 404 807
+127.0.0.1 - - [05/Dec/2020:21:05:02 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [05/Dec/2020:21:05:20 +0900] "GET /mvcboard/board/boardList.do?pg=2 HTTP/1.1" 200 3588

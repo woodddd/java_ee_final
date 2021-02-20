@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인</title>
+<style></style>
+
+</head>
+
+<body>
+ <form name="loginForm" method="post" action = "http://localhost:8080/memberServlet/LoginServlet">
+  <h1>로그인</h1>
+  <hr>
+  
+  <table border = "1" cellpadding = "3" cellspacing = "0">
+   <tr>
+    <td align="center">아이디</td>
+    <td><input type="text" id="loginid" name= "loginid">
+    <div id="loginidDiv" style="color:red; font-size: 8pt;"></div>
+    </td>
+   </tr>
+   
+   <tr>
+    <td align="center">비밀번호</td>
+    <td><input type="password" id="loginpwd" name="loginpwd">
+    <div id="loginpwdDiv" style="color:red; font-size: 8pt;"></div>
+    </td> 
+   </tr>
+   
+   <tr>
+   <td colspan="2" align="center">
+   <input type="button" value="로그인" onclick="checkLogin()"> <!-- "javascript:checkLogin()" 에서 javascript 는 빼줘도 됨. 이벤트는 스크립트와 연결되어있기 때문, -->
+   <input type="button" value="회원가입" onclick="location.href='writeForm.html'">
+   </tr>
+   
+  </table>
+ </form>
+</body>
+<script type="text/javascript" src="../js/member.js">
+
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{
+	border: 2px solid yellowgreen;
+	color: blue;
+	background: aliceblue;
+}
+span {
+	border: 3px dotted red;
+	background: yellow;
+}
+</style>
+</head>
+<body>
+<h3>인라인, 인라인 블록, 블록</h3>
+<hr>
+나는 <div>div</div>입니다.<br><br>
+나는<div style="display: none">div(none)</div>입니다.<br><br> <!-- none과 hidden은 안보이는것은 똑같지만 hidden은 영역은 잡되, 보이지 않는것임 -->
+나는<div style="visibility: hidden">div(hidden)</div>입니다.<br><br>
+나는<div style="display: inline">div(inline)</div>입니다<br><br> <!-- 갖고있는 글자만큼만 잡아라 - inline -->
+나는<div style="display: inline-block; height: 50px">div(inline-block)</div>입니다<br><br> 
+나는<div>div<span style="display: block">span(block)</span>입니다.</div> <!-- span태그는 inline형식이지만 블록형식으로 바꿔버린것. 그래서 한줄을 차지해버린것임. -->
+
+</body>
+</html>

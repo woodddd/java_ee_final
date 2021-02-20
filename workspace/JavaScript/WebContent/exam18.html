@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function doPrint(num){
+	var msg ="doPrint()가 " + num + "회 실행되었습니다.";
+	alert(msg);
+	/* document.getElementById("myId").innerHTML = msg; */
+}
+
+doPrint(1);
+</script>
+</head>
+<body>
+	<script type="text/javascript">
+		doPrint(2);
+	</script>
+	
+	<h1 id="myId">안녕하세요</h1> <!-- 스크립트를 2개잡아놓았기 때문에 스택영역에는 함수가 먼저 쌓여있음. 그래서 script 문의 doPrint(3)까지 실행한 후에 h1 태그로 넘어오게됨 -->
+	
+	<script type="text/javascript">
+		doPrint(3);
+	</script>
+</body>
+</html>

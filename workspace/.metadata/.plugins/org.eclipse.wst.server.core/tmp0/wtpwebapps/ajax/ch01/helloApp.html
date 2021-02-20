@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var httpRequest = null;
+function helloToServer(){
+	var name = document.inputForm.name.value;
+	httpRequest = new XMLHttpRequest();
+	httpRequest.onreadystatechange = helloFromServer;
+	
+	//GET 방식
+	//httpRequest.open("GET", "hello.jsp?name="+name, true);
+	//httpRequest.send(null);//서버 호출//겟방식으로 데이터를 보내기 때문에 보낼 데이터는 없다.
+	
+	//POST방식
+	httpRequest.open("POST", "hello.jsp", true);
+	//POST방식으로 넘길 땐, 내부적으로 페이지대 페이지로 움직여지기 때문에, 아래의 문장을 처리해 줘야 UTF-8형식으로 데이터를 처리한다.
+	//www로 시작되는 url 주소에 대해 UTF-8형식으로 변화하는것.   DTD(application/x-www-form-urlencoded) charset=UTF-8 - 한글처리를 하기위한 코드)  가 있어야 POST로 전송된 데이터를 보낼 수 있음.
+	//httpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=UTF-8"); // charset=UTF-8 는 생략해도 데이터를 보내는데 문제가 없음, 단, 한글만 못보내는것
+	httpRequest.send("name="+name);
+}
+
+function helloFromServer(){
+	if(httpRequest.readyState == 4){
+		if(httpRequest.status == 200){
+			alert("서버 응답: " + httpRequest.responseText);
+		}	
+	}
+	
+}
+</script>
+</head>
+<body>
+<form name="inputForm" method="get" action="">
+	<input type="text" name="name">
+	<input type="button" value="입력" onclick="helloToServer()"/>
+
+</form>
+</body>
+</html>

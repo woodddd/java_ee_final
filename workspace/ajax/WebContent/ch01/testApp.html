@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var httpRequest = null;
+function testToServer(){
+	var name = document.testForm.name.value;
+	var birth = document.testForm.birth.value;
+	
+	httpRequest = new XMLHttpRequest();
+	httpRequest.onreadystatechange = testFromServer;
+	
+	httpRequest.open("POST", "test.jsp", true);
+	httpRequest.setRequestHeader("Content-Type","application/x-www-form-urlencoded;charset=UTF-8");
+	httpRequest.send("name="+name+"&birth="+birth);
+	
+}
+
+function testFromServer(){
+	if(httpRequest.readyState == 4){
+		if(httpRequest.status == 200){
+			//alert("서버 응답: " + httpRequest.responseText.trim());//trim 함수는 앞뒤 공백을 모두 제거
+			
+			var result = document.getElementById("result");
+			//result.innerText = httpRequest.responseText.trim();
+			result.innerHTML = "<font color=blue>" + httpRequest.responseText.trim() + "</font>";
+			
+			//위의 방식을 jquery를 사용한 코드
+			//$('#result').text(httpRequest.responseText.trim());
+			//$('#result').html("<font color=blue>" + httpRequest.responseText.trim() + "</font>");
+		}	
+	}
+}
+</script>
+</head>
+<body>
+<form name="testForm" method="post">
+   <div>이름&emsp;&emsp;
+      <input type="text" name="name">
+   </div><br>
+   <div>생년월일
+      <input type="text" name="birth">
+      <label>년월일(ex: 20210111)</label>
+   </div><br> 
+   <div>
+      <input type="button" value="보내기" onclick="testToServer()">
+   </div>
+   <br><br>
+   <div id="result"></div>
+</form>
+</body>
+</html>

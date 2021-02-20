@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var httpRequest = null; //전역변수로 설정
+function load(url){
+	httpRequest = new XMLHttpRequest();//생성
+	httpRequest.onreadystatechange = viewMessage;//응답이 오면 viewMessage 함수 호출 / 여기서는 괄호를 절대 치지 않는다.
+	httpRequest.open('GET', url,"true"); // method 방식, url, 비동기 처리유무 t/r t - 비동기 방식, f - 동기 방식
+	httpRequest.send(null);//서버 호출,보낼 데이터가 없다.
+}
+
+function viewMessage(){
+	//jquery의 ajax에선 아래의 두 if 문이 success가 된다. - 요청을 하여 성공적으로 돌아온 상태
+	if(httpRequest.readyState == 4){ // COMPLETED - 데이터를 전부 받은 상태 
+		if(httpRequest.status == 200) { // OK - 요청성공
+			//alert(httpRequest.responseText);//body문 안의 데이터만 가져오는 것이 아니라, simple.jsp의 모든 내용을 다 가져옴
+			console.log(httpRequest.responseText);
+		}else{
+			alert("실패 : " + httpRequest.status);
+		}
+	}
+	
+}
+</script>
+</head>
+<body>
+<input type="button" value="simple.jsp" onclick="load('simple.jsp')"/>
+</body>
+</html>

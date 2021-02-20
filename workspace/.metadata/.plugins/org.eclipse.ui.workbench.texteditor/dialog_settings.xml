@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value=""/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="재그"/>
+			<item value="1050"/>
+			<item value="mouse"/>
+			<item value="die"/>
+			<item value="10"/>
+			<item value="105"/>
+			<item value="gameAct"/>
+			<item value="80"/>
+			<item value="wormdie"/>
+			<item value="food"/>
+			<item value="t.start"/>
+			<item value="thread"/>
+			<item value="run"/>
+			<item value="foodset"/>
+			<item value="mouseX"/>
+		</list>
+		<list key="replacehistory">
+			<item value="choice"/>
+			<item value="th"/>
+			<item value="map"/>
+			<item value="memberDTO"/>
+			<item value="zipcodeDTO"/>
+			<item value="zipcodedto"/>
+			<item value="smile"/>
+			<item value="5"/>
+			<item value="code"/>
+			<item value="inputnum"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1588"/>
+		<item key="DIALOG_Y_ORIGIN" value="355"/>
+		<item key="DIALOG_WIDTH" value="288"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

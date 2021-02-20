@@ -1,0 +1,207 @@
+package miniProject;
+
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+
+public class WormSelect extends JFrame implements ActionListener { 
+   private JRadioButton smile, beauty, mad, green, blue, red, yellow, orange, magenta;
+   private JLabel face, color, score1, score2;
+   private JButton startBtn;
+   private Image image, image2, bg;
+   private JPanel p2;
+   private JPanel gameAct;
+   
+
+   public WormSelect() {
+      super("지렁이 캐릭터 선택");
+      
+      face = new JLabel("얼굴 선택");   
+      color = new JLabel("컬러 선택");   
+      score1 = new JLabel("score1");
+      score2 = new JLabel("score2");
+      
+      smile = new JRadioButton("웃는 얼굴");
+      beauty = new JRadioButton("예쁜 얼굴");
+      mad = new JRadioButton("화난 얼굴");
+     
+      red = new JRadioButton("빨강");
+      orange = new JRadioButton("주황"); 
+      yellow = new JRadioButton("노랑");
+      green = new JRadioButton("초록");
+      blue = new JRadioButton("파랑");
+      magenta = new JRadioButton("보라");
+      bg = Toolkit.getDefaultToolkit().getImage("lib/backG.png") ;
+
+      
+       score1.setBounds(30, 10, 70, 30);
+       score2.setBounds(110, 10, 70, 30);
+       face.setBounds(820, 10, 70, 30);
+       smile.setBounds(820, 40, 90, 30);
+       beauty.setBounds(820, 70, 90, 30 );
+       mad.setBounds(820, 100 , 90, 30);
+
+       
+       color.setBounds(820, 130, 70, 30);
+       red.setBounds(820, 160, 60, 30);
+       orange.setBounds(820, 190, 60, 30);
+       yellow.setBounds(820, 220, 60, 30);
+       green.setBounds(820, 250, 60, 30);
+       blue.setBounds(820, 280, 60, 30);
+       magenta.setBounds(820, 310, 60, 30);
+
+
+       startBtn = new JButton("START!");
+       startBtn.setBounds(400, 720, 100, 30);
+        
+        ButtonGroup faceG = new ButtonGroup();
+        faceG.add(smile);
+        faceG.add(beauty);
+        faceG.add(mad);
+        
+        ButtonGroup colorG = new ButtonGroup();
+        colorG.add(red);
+        colorG.add(orange);
+        colorG.add(yellow);
+        colorG.add(green);
+        colorG.add(blue);
+        colorG.add(magenta);
+        p2  = new JPanel() {
+            @Override
+            public void paint(Graphics g) {
+//                 g.setColor(new Color(0,0,0,10));
+               
+                   g.drawImage(image, 0, 0, this);
+                   setOpaque(false);
+           
+           
+           
+           g.drawImage(image2, 195, 100, this);
+           } 
+        };
+        
+        p2.setBounds(200, 350,300, 200);
+        System.out.println(bg.getHeight(this));
+		System.out.println(bg.getWidth(this));;
+//        gameAct = new JPanel() {
+//        	
+//        	
+//        	
+//        	@Override
+//        	public void paint(Graphics g) {
+//        		
+//        		List<ScoreDTO> list = new ArrayList<ScoreDTO>();
+//        		if(list.size() == 0) {
+//        		int x = (int)Math.random() * 200 + 
+//        		int y = (int)Math.random() * 480  + 135;
+//        		}
+//        		
+//        	
+//        	}
+//        };
+       JPanel p = new JPanel(){
+          public void paintComponent(Graphics g) {
+               g.drawImage(bg, 10, 100, 780, 600, this);
+               g.drawRect(35, 125, 680, 550); // redLine - 경계
+               setOpaque(false);
+               super.paintComponent(g);
+           } };;
+       p.setLayout(null);
+       p.add(face);
+       p.add(smile);
+       p.add(beauty);
+       p.add(mad);
+       p.add(color);
+       p.add(green);
+       p.add(blue);
+       p.add(red);
+       p.add(orange);
+       p.add(yellow);
+       p.add(magenta);
+       p.add(startBtn);
+       p.add(score1);
+       p.add(score2);
+      
+       
+       add(p2);
+       add(p);
+       
+       setBounds(500, 200, 950, 800);
+        setVisible(true);
+        setResizable(false); 
+        
+
+        
+        addWindowListener(new WindowAdapter() {
+             @Override
+             public void windowClosing(WindowEvent e) {
+                System.exit(0);
+            }
+         });
+        
+        
+        beauty.setSelected(true);
+        green.setSelected(true);
+        
+        
+        smile.addActionListener(this);
+        beauty.addActionListener(this);
+        mad.addActionListener(this);
+        
+        red.addActionListener(this);
+        orange.addActionListener(this);
+        yellow.addActionListener(this);
+        green.addActionListener(this);
+        blue.addActionListener(this);
+        magenta.addActionListener(this);
+        
+        startBtn.addActionListener(this);  
+        
+        new Login();
+   }
+   
+   
+
+   
+   @Override
+   public void actionPerformed(ActionEvent e) {
+      if(smile.isSelected()) {
+            if(red.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/smileR.jpg"); 
+           if(orange.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/smileO.jpg"); 
+           if(yellow.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/smileY.jpg");
+          if(green.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/smileG.jpg");
+          if(blue.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/smileB.jpg");
+          if(magenta.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/smileM.jpg");
+      }
+      if(beauty.isSelected()) {
+          if(red.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/beautyR.jpg");
+           if(orange.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/beautyO.jpg");
+           if(yellow.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/beautyY.jpg");
+           if(green.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/beautyG.jpg");
+           if(blue.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/beautyB.jpg");
+           if(magenta.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/beautyM.jpg");
+      }
+      if(mad.isSelected()) {
+          if(red.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/madR.jpg");
+           if(orange.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/madO.jpg");
+           if(yellow.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/madY.jpg");
+           if(green.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/madG.jpg");
+           if(blue.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/madB.jpg");
+           if(magenta.isSelected()) image = Toolkit.getDefaultToolkit().getImage("image/madM.jpg");
+      }
+      p2.repaint();
+   }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+div{
+	padding: 5px;
+}
+label{
+	display: inline-block;
+	width: 90px;
+	text-align:right;
+	padding: 10px;
+}
+
+input[type=text]{ /* input 태그중에서 type이 text인 것들에게 속성을 주곘다. */
+	color:red;
+}
+input:hover,textarea:hover{
+	background: aliceblue;
+}
+input[type=text]:focus,input[type=email]:focus{
+	font-size:120%;
+}
+</style>
+</head>
+<body>
+<h3>ConTACT US</h3>
+<hr>
+<form>
+	<div>
+		<label>Name</label>
+		<input type="text" placeholder="Elvis">
+	</div>
+	<div>
+		<label>Email</label>
+		<input type="email" placeholder="elvis@graceland.com">
+	</div>
+	<div>
+		<label>Comment</label>
+		<textarea placeholder="메시지를 남겨주세요"></textarea>
+	</div>
+	<div>
+		<label></label>
+		<input type="submit" value="submit">
+	</div>
+</form>
+</body>
+</html>

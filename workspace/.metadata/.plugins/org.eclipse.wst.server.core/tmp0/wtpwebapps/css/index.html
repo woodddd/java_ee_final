@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="common/css/main.css">
+</head>
+<body>
+<dl class="skip">
+	<dt class="blind">skip navigation</dt>
+	<dd><a href="#content">skip to content</a></dd>
+</dl><!-- skip -->
+<hr>
+
+<div id = "wrap">
+	<div id = "header">
+		<h1 class="logo"><a href="#">LOGO</a></h1>
+		
+		<dl class="topnav">
+			<dt class="blind">top navigation</dt>
+			<dd><a href="#">Login</a></dd>
+			<dd><a href="#">Mmber join</a></dd>
+			<dd><a href="#">Sitemap</a></dd>
+		</dl>
+		
+		<h2 class="blind">main navigation</h2>
+		<ul class="mainnav">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Contact us</a></li>
+		</ul>
+		
+	</div><!-- header -->
+	<hr>
+	
+	<div id="container">
+		<div class="snb">
+			<h2>About</h2>
+			<ul>
+				<li><a href="#">company Info</a></li>
+				<li><a href="#">History</a></li>
+				<li><a href="#">Location</a></li>
+			</ul>
+		</div><!-- snb -->
+		<hr>
+		
+		<div id="content">
+			<p class="locate">
+				<a href="#">Home</a> &gt; <!-- &gt > 를의미함 -->
+				<a href="#">About</a> &gt;
+				<strong>Company Info</strong>
+			</p>
+			
+			<h2>Company Info</h2>
+			<p class="thum">
+				<img src="img/treethum.png" alt="tree thunail photo">
+			</p>
+			<div class="text">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, ea, impedit ut 
+        	 perspiciatis assumenda ipsam minus veritatis tenetur nisi commodi laboriosam 
+         	quae sint nulla? Obcaecati, corrupti, placeat, quasi repudiandae deleniti quod 
+         	aliquam facere vitae cumque sapiente sequi qui asperiores eos ipsum perferendis 
+         	tenetur veritatis nesciunt dolores corporis sint nisi numquam excepturi dolor 
+         	aspernatur natus provident et itaque quaerat saepe unde quo quidem odit sunt 
+	         soluta animi incidunt beatae. Quod, amet recusandae earum iste debitis! Amet, 
+    	     expedita, aperiam, sint omnis fuga magnam eos quidem alias soluta nobis sunt 
+        	 unde incidunt! Ratione, autem eligendi molestiae saepe et numquam facilis 
+         	pariatur voluptates ipsum!</p>
+         	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, velit illum 
+         	omnis ipsam quibusdam blanditiis iusto obcaecati nihil ab in! Iure, natus, magni, 
+         	similique aut laudantium omnis a non quisquam aliquid numquam libero pariatur 
+         	ipsa optio doloribus temporibus impedit ratione quam. Deserunt, quisquam, ad, 
+         	provident officiis nostrum praesentium blanditiis quidem sapiente voluptate 
+         	asperiores eius rerum dignissimos minima consequatur voluptatum odio fuga 
+         	soluta! In, odio eos numquam veniam odit ratione dolorum architecto sint. Qui, 
+         	harum, eveniet recusandae vitae perferendis sunt dolores distinctio alias eius 
+         	quibusdam maxime id sed velit iusto cupiditate excepturi facilis odio voluptatibus 
+         	dignissimos quidem aperiam vel corporis iure nam laboriosam ratione perspiciatis. 
+         	Ut, repellendus numquam aspernatur voluptatum doloremque blanditiis quis quam 
+         	quisquam aperiam illo impedit similique accusamus at.</p>
+			</div><!-- text -->
+			
+		</div><!-- content -->
+	</div><!-- container -->
+</div><!-- wrap -->
+	<hr>
+	
+	<div id="footer">
+		<div class="footerArea">
+			<dl class="btmnav">
+				<dt class="blind">bottom navigation</dt>
+				<dd><a href="#">About</a></dd>
+				<dd><a href="#">Services</a></dd>
+				<dd><a href="#">Portfolio</a></dd>
+				<dd><a href="#">Contact us</a></dd>
+				<dd><a href="#">Location</a></dd>
+			</dl>
+			
+			<p class="copy">
+				Copyright &copy; COMPANY Design<br>
+				Powered by Webazit, e-mail : <a href="mailto:Webmaster@company.com">Webmaster@company.com</a>
+			</p> <!-- mailto:를 href 안에 써주면 해당 이메일 주소로 메일을 보낼 수 있게 된다 -->
+		
+	</div><!-- footerArea -->
+</div><!-- footer -->
+
+</body>
+</html>
+
+<!-- 
+dl - Description-List (설명 몽록)
+
+	dl 하위 태그
+	
+	dt - Description-Term (용어)
+	dd - Description-Description (설명)
+ -->
+
+<!-- 
+- GNB ( Global Navigation Bar ) 
+   사이트 최상위 전체 공통 네비게이션.
+   메인메뉴, 대분류 메뉴, 전체 사이트에서 사용되는 공통메뉴바
+- LNB ( Local Navigation Bar ) 
+   현재 서비스 영역(Local)만 해당되는 네비게이션.
+   서브메뉴, 중분류 메뉴, 각 서브분류 별 사용되는 메뉴바 
+- SNB ( Side Navigation Bar ) 
+   메인메뉴, 서브메뉴를 제외한 나머지 사이드메뉴, 기타메뉴바
+- FNB ( Foot Navigation Bar ) 
+   하단메뉴, 하단로고, 주소, 카피라이팅 영역 
+-->
+
+<!-- 
+SKIP 기능
+스킵메뉴란 tab을 이용해서 마우스가 아닌 키보드로 화면을 제어하고 메뉴 버튼을 누를 수 있게 하는 기능이다.
+naver, daum 등 대표적인 사이트는 모두 적용이 되어있다.
+- html 문서에서 맨 앞에 지정했던 “본문 바로가기(skip)”의 표현을 작성
+- 화면에서 나타나지 않고 있다가 ":focus", 즉 "Tab"키를 눌렀을 때 등장한다.
+- 이때 "Enter"키를 눌러 본문으로 이동하거나, 클릭하여 이동할 수 있다.
+
+ex) [본문 바로가기] || [메뉴 바로가기] || [하단정보 바로가기]
+
+키보드만으로 접근을 하는 사용자를 위한 편의를 제공
+
+HTML 가장 상단에 Skip Navigation - <body> 다음에 오는 것이 적합하다.
+ -->

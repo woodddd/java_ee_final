@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#gugudanResult {
+   visibility: hidden;
+}
+</style>
+</head>
+<body>
+<form name="gugudanForm" method="get">
+   <input type="text" name="dan" placeholder="단 입력"/>
+   <input type="button" value="결과" onclick="gugudanRequest()"/>
+   <br><br>
+   <div id="gugudanResult" style="border: 1px red solid;"></div>
+</form>
+
+<script type="text/javascript">
+var httpRequest = null;
+
+function gugudanRequest(){
+   var dan = document.gugudanForm.dan.value;
+   
+   httpRequest = new XMLHttpRequest();
+   httpRequest.onreadystatechange = gugudanResponse;
+   httpRequest.open("GET", "getGugudan.jsp?dan="+dan, true);
+   httpRequest.send();
+}
+
+function gugudanResponse(){
+   if(httpRequest.readyState == 4){
+      if(httpRequest.status == 200){
+         var result = httpRequest.responseText;
+         
+         var div = document.getElementById("gugudanResult");
+         div.style.visibility = "visible";//visible - 눈에보이다.
+         div.innerHTML = result;
+      }
+   }
+}
+</script>
+</body>
+</html>

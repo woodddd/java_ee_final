@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var httpRequest = null;
+
+function loadList() {
+      httpRequest = new XMLHttpRequest();
+      httpRequest.onreadystatechange=loadedList;
+      httpRequest.open("GET","getMaxTemperature.jsp",true);
+      httpRequest.send();
+      
+   }
+function loadedList(){
+   if (httpRequest.readyState == 4) { //COMPLETED
+      if (httpRequest.status == 200) { //OK
+         var csvStr=httpRequest.responseText;   //"10.2,11.8,12.9,9.0"
+         
+         var temperatureStrs=csvStr.split(",");   //"10.2"   "11.8"   "12.9"   "9.0"
+		// split 의 return 은 배열.      
+         
+         //분리된 문자열을 배열로 생성
+         var temperatures= new Array(temperatureStrs.length);
+         
+         for(var i=0;i<temperatureStrs.length;i++){
+            temperatures[i]=parseFloat(temperatureStrs[i]);
+         }
+         
+         //최대값
+         var max=temperatures[0];
+         for(var i=1;i<temperatures.length;i++){
+            if(temperatures[i]>max)
+               max=temperatures[i];
+         }
+         
+         var maxtemp=document.getElementById("maxtemp");
+         maxtemp.innerHTML="<strong><font color=red>"+max+"</font></strong>";
+      
+      }else{
+         alert(httpRequest.status);
+      }
+   }
+}
+   window.onload = function() {
+      loadList();
+   }
+</script>
+</head>
+<body>
+   최근 4일간 최고 기온 :
+   <span id="maxtemp"></span>
+</body>
+</html>

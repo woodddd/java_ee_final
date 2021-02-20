@@ -1,0 +1,348 @@
+
+11월 16, 2020 12:45:34.476 NEW SESSION
+11월 16, 2020 12:45:34.476 [6092:5728:1116/124534.472:ERROR:device_event_log_impl.cc(208)] [12:45:34.472] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 16, 2020 12:55:24.711 [1116/125524.702:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 16, 2020 16:53:28.364 [4560:7604:1116/165328.364:ERROR:device_event_log_impl.cc(208)] [16:53:28.364] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 16, 2020 16:56:14.433 [10716:7396:1116/165614.433:ERROR:device_event_log_impl.cc(208)] [16:56:14.433] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 16, 2020 17:06:11.736 [1116/170611.734:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 16, 2020 17:27:20.210 [10844:6592:1116/172720.210:ERROR:device_event_log_impl.cc(208)] [17:27:20.209] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 16, 2020 17:29:45.395 [8892:9120:1116/172945.395:ERROR:device_event_log_impl.cc(208)] [17:29:45.395] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 16, 2020 17:37:33.202 [8628:3576:1116/173733.202:ERROR:device_event_log_impl.cc(208)] [17:37:33.202] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 16, 2020 17:38:04.739 [5960:10288:1116/173804.739:ERROR:device_event_log_impl.cc(208)] [17:38:04.739] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 16, 2020 17:48:02.117 [1116/174802.116:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 16, 2020 17:56:54.47 [6704:6256:1116/175654.047:ERROR:device_event_log_impl.cc(208)] [17:56:54.048] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 16, 2020 18:06:52.157 [1116/180652.156:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 16, 2020 18:57:54.232 [9376:10836:1116/185754.231:ERROR:device_event_log_impl.cc(208)] [18:57:54.231] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 16, 2020 18:59:28.301 [9028:7932:1116/185928.301:ERROR:device_event_log_impl.cc(208)] [18:59:28.301] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 16, 2020 19:00:28.514 [10496:4228:1116/190028.514:ERROR:device_event_log_impl.cc(208)] [19:00:28.514] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 16, 2020 19:03:03.316 [5112:2128:1116/190303.316:ERROR:device_event_log_impl.cc(208)] [19:03:03.316] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 16, 2020 19:04:31.253 [10336:9352:1116/190431.252:ERROR:device_event_log_impl.cc(208)] [19:04:31.252] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 16, 2020 19:14:22.778 [1116/191422.778:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 17, 2020 10:14:50.564 NEW SESSION
+11월 17, 2020 10:14:50.565 [8068:10188:1117/101450.562:ERROR:device_event_log_impl.cc(208)] [10:14:50.563] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 17, 2020 10:24:44.188 [1117/102444.182:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 17, 2020 11:39:24.963 [1456:5304:1117/113924.963:ERROR:device_event_log_impl.cc(208)] [11:39:24.963] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 17, 2020 11:47:20.719 [2668:5648:1117/114720.718:ERROR:device_event_log_impl.cc(208)] [11:47:20.718] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 17, 2020 11:57:14.197 [1117/115714.196:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 17, 2020 14:28:47.127 NEW SESSION
+11월 17, 2020 14:28:47.128 [10920:10372:1117/142847.126:ERROR:device_event_log_impl.cc(208)] [14:28:47.126] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 17, 2020 14:38:42.243 [1117/143842.243:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 17, 2020 16:56:05.654 [8768:5244:1117/165605.654:ERROR:device_event_log_impl.cc(208)] [16:56:05.655] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 17, 2020 17:02:35.998 [10236:3976:1117/170235.998:ERROR:device_event_log_impl.cc(208)] [17:02:35.997] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 17, 2020 17:12:22.481 [1117/171222.480:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 17, 2020 17:16:10.58 [9908:6904:1117/171610.058:ERROR:device_event_log_impl.cc(208)] [17:16:10.058] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 17, 2020 17:26:01.428 [1117/172601.427:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 17, 2020 19:30:29.577 [4944:7668:1117/193029.577:ERROR:device_event_log_impl.cc(208)] [19:30:29.577] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 17, 2020 19:35:44.911 [9716:8740:1117/193544.910:ERROR:device_event_log_impl.cc(208)] [19:35:44.910] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 17, 2020 19:44:37.692 [7200:4572:1117/194437.692:ERROR:device_event_log_impl.cc(208)] [19:44:37.693] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 17, 2020 19:54:27.200 [1117/195427.198:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 17, 2020 20:31:53.593 [9204:9828:1117/203153.593:ERROR:device_event_log_impl.cc(208)] [20:31:53.592] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 17, 2020 20:34:22.445 [5804:2316:1117/203422.445:ERROR:device_event_log_impl.cc(208)] [20:34:22.444] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 17, 2020 20:39:30.217 [6244:1464:1117/203930.217:ERROR:device_event_log_impl.cc(208)] [20:39:30.217] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 17, 2020 20:42:12.365 [5892:2132:1117/204212.365:ERROR:device_event_log_impl.cc(208)] [20:42:12.365] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+
+11월 18, 2020 09:28:33.628 NEW SESSION
+11월 18, 2020 09:28:33.629 [5520:5772:1118/092833.625:ERROR:device_event_log_impl.cc(208)] [09:28:33.625] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 18, 2020 09:34:30.513 [7876:8640:1118/093430.512:ERROR:device_event_log_impl.cc(208)] [09:34:30.512] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+
+11월 18, 2020 15:01:09.302 NEW SESSION
+11월 18, 2020 15:01:09.302 [1616:8392:1118/150109.301:ERROR:device_event_log_impl.cc(208)] [15:01:09.301] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 18, 2020 15:10:58.431 [1118/151058.430:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 19, 2020 10:11:39.716 NEW SESSION
+11월 19, 2020 10:11:39.716 [6036:1132:1119/101139.712:ERROR:device_event_log_impl.cc(208)] [10:11:39.713] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 10:21:34.799 [1119/102134.786:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 19, 2020 14:29:54.907 NEW SESSION
+11월 19, 2020 14:29:54.907 [2236:6576:1119/142954.903:ERROR:device_event_log_impl.cc(208)] [14:29:54.903] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 14:31:53.886 [3056:4736:1119/143153.885:ERROR:device_event_log_impl.cc(208)] [14:31:53.885] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 14:34:27.571 [1952:4188:1119/143427.571:ERROR:device_event_log_impl.cc(208)] [14:34:27.570] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 14:35:20.987 [8688:7984:1119/143520.987:ERROR:device_event_log_impl.cc(208)] [14:35:20.987] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 14:37:43.707 [2036:1952:1119/143743.707:ERROR:device_event_log_impl.cc(208)] [14:37:43.706] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 14:39:49.600 [1248:8764:1119/143949.599:ERROR:device_event_log_impl.cc(208)] [14:39:49.599] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 14:43:57.394 [4932:7876:1119/144357.394:ERROR:device_event_log_impl.cc(208)] [14:43:57.394] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 14:49:34.240 [6848:1960:1119/144934.240:ERROR:device_event_log_impl.cc(208)] [14:49:34.239] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 14:51:01.355 [7840:6740:1119/145101.355:ERROR:device_event_log_impl.cc(208)] [14:51:01.355] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 15:01:00.615 [1119/150100.614:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 19, 2020 15:43:00.94 [2560:8900:1119/154300.094:ERROR:device_event_log_impl.cc(208)] [15:43:00.094] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 15:47:48.416 [6468:8216:1119/154748.416:ERROR:device_event_log_impl.cc(208)] [15:47:48.416] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 15:57:37.828 [1119/155737.827:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 19, 2020 16:29:14.917 [11056:9496:1119/162914.917:ERROR:device_event_log_impl.cc(208)] [16:29:14.917] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 16:34:11.605 [10216:3056:1119/163411.605:ERROR:device_event_log_impl.cc(208)] [16:34:11.605] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 16:39:09.274 [1228:10620:1119/163909.274:ERROR:device_event_log_impl.cc(208)] [16:39:09.274] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 16:47:47.356 [5664:10640:1119/164747.355:ERROR:device_event_log_impl.cc(208)] [16:47:47.355] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 16:48:29.459 [8800:6140:1119/164829.459:ERROR:device_event_log_impl.cc(208)] [16:48:29.459] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 16:58:23.718 [1119/165823.717:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 19, 2020 18:50:08.307 [10044:10560:1119/185008.307:ERROR:device_event_log_impl.cc(208)] [18:50:08.306] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 18:56:09.356 [5144:9128:1119/185609.355:ERROR:device_event_log_impl.cc(208)] [18:56:09.355] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 19, 2020 18:57:36.608 [7688:9140:1119/185736.608:ERROR:device_event_log_impl.cc(208)] [18:57:36.608] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+
+11월 20, 2020 11:13:01.379 NEW SESSION
+11월 20, 2020 11:13:01.380 [7448:6296:1120/111301.376:ERROR:device_event_log_impl.cc(208)] [11:13:01.376] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 11:22:54.906 [1120/112254.906:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 20, 2020 12:03:00.875 [8464:9120:1120/120300.875:ERROR:device_event_log_impl.cc(208)] [12:03:00.864] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 12:12:57.94 [1120/121257.094:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 20, 2020 12:48:09.06 [3376:4100:1120/124809.006:ERROR:device_event_log_impl.cc(208)] [12:48:09.006] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 12:51:45.545 [3740:10596:1120/125145.544:ERROR:device_event_log_impl.cc(208)] [12:51:45.545] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 13:01:38.800 [1120/130138.800:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 20, 2020 16:13:30.430 [8260:10288:1120/161330.430:ERROR:device_event_log_impl.cc(208)] [16:13:30.429] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 16:15:48.411 [6780:3136:1120/161548.411:ERROR:device_event_log_impl.cc(208)] [16:15:48.411] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 16:32:23.177 [236:4228:1120/163223.177:ERROR:device_event_log_impl.cc(208)] [16:32:23.166] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 16:42:21.278 [1120/164221.278:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 20, 2020 16:51:33.539 [7348:7732:1120/165133.539:ERROR:device_event_log_impl.cc(208)] [16:51:33.537] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 16:53:35.123 [4204:6104:1120/165335.123:ERROR:device_event_log_impl.cc(208)] [16:53:35.133] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 16:55:14.25 [6184:7324:1120/165514.025:ERROR:device_event_log_impl.cc(208)] [16:55:14.030] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 16:55:40.449 [6892:2292:1120/165540.449:ERROR:device_event_log_impl.cc(208)] [16:55:40.442] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 16:56:01.901 [7944:5640:1120/165601.901:ERROR:device_event_log_impl.cc(208)] [16:56:01.910] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 16:57:49.916 [10212:836:1120/165749.916:ERROR:device_event_log_impl.cc(208)] [16:57:49.911] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 17:07:47.296 [1120/170747.296:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 20, 2020 17:34:40.477 [10576:6892:1120/173440.476:ERROR:device_event_log_impl.cc(208)] [17:34:40.477] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 17:37:42.46 [6920:4020:1120/173742.046:ERROR:device_event_log_impl.cc(208)] [17:37:42.046] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 17:38:19.641 [3828:6556:1120/173819.641:ERROR:device_event_log_impl.cc(208)] [17:38:19.642] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 17:39:43.723 [10776:3960:1120/173943.723:ERROR:device_event_log_impl.cc(208)] [17:39:43.728] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 17:42:52.243 [7740:9196:1120/174252.243:ERROR:device_event_log_impl.cc(208)] [17:42:52.252] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+11월 20, 2020 17:45:46.15 [10372:8744:1120/174546.015:ERROR:device_event_log_impl.cc(208)] [17:45:46.023] Bluetooth: bluetooth_adapter_winrt.cc:1076 Getting Default Adapter failed.
+
+11월 21, 2020 22:14:09.955 NEW SESSION
+11월 21, 2020 22:14:09.956 [17524:15096:1121/221409.952:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 21, 2020 22:14:34.175 [17524:15096:1121/221434.173:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 21, 2020 22:19:50.745 [17524:15096:1121/221950.743:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 21, 2020 22:20:18.322 [17524:15096:1121/222018.322:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 21, 2020 22:21:00.836 [17524:15096:1121/222100.835:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 21, 2020 22:22:56.858 [17524:15096:1121/222256.858:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 21, 2020 22:24:07.204 [1121/222407.202:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 21, 2020 22:25:07.62 [17524:15096:1121/222507.061:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 21, 2020 22:26:49.167 [17524:15096:1121/222649.156:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 21, 2020 22:27:30.936 [17524:15096:1121/222730.934:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 21, 2020 22:28:44.602 [18316:6992:1121/222844.600:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 21, 2020 22:29:10.779 [18316:6992:1121/222910.778:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 21, 2020 22:30:04.232 [18316:6992:1121/223004.231:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 21, 2020 22:31:47.845 [18316:6992:1121/223147.844:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 21, 2020 22:35:28.597 [18316:6992:1121/223528.596:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 21, 2020 22:38:36.117 [1121/223836.115:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 21, 2020 22:40:56.179 [18316:6992:1121/224056.179:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+
+11월 21, 2020 23:42:56.702 NEW SESSION
+11월 21, 2020 23:42:56.703 [1121/234256.693:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 22, 2020 24:09:22.417 [1122/000922.411:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 22, 2020 01:05:06.933 [1122/010506.926:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 22, 2020 23:09:56.405 NEW SESSION
+11월 22, 2020 23:09:56.408 [1122/230956.384:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 23, 2020 09:06:52.582 NEW SESSION
+11월 23, 2020 09:06:52.583 [1123/090652.557:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 23, 2020 11:41:10.139 [1123/114110.130:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 23, 2020 15:07:11.941 [1123/150711.933:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 23, 2020 16:42:52.908 NEW SESSION
+11월 23, 2020 16:42:52.909 [1123/164252.853:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 23, 2020 17:31:54.858 [1123/173154.854:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 23, 2020 17:52:28.673 [1123/175228.666:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 24, 2020 10:22:03.987 NEW SESSION
+11월 24, 2020 10:22:03.987 [1124/102203.979:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 24, 2020 11:33:32.917 [1124/113332.910:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 24, 2020 11:44:42.89 [1124/114442.083:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 24, 2020 12:36:23.26 [1124/123623.020:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 24, 2020 14:05:20.689 [1124/140520.681:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 24, 2020 16:28:26.349 NEW SESSION
+11월 24, 2020 16:28:26.349 [1124/162826.337:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 24, 2020 16:47:18.104 [1124/164718.097:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 24, 2020 17:55:05.570 [1124/175505.564:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 25, 2020 10:13:46.753 NEW SESSION
+11월 25, 2020 10:13:46.754 [1125/101346.740:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 25, 2020 10:50:50.749 [1125/105050.739:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 25, 2020 14:42:05.944 [1125/144205.935:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 25, 2020 16:25:35.223 [1125/162535.212:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 25, 2020 16:41:53.161 [1125/164153.144:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 25, 2020 17:20:54.704 [1125/172054.690:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 25, 2020 19:44:38.339 [1125/194438.331:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 25, 2020 20:18:01.908 [1125/201801.900:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 26, 2020 09:45:10.678 NEW SESSION
+11월 26, 2020 09:45:10.678 [1126/094510.658:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 26, 2020 10:00:10.355 [1126/100010.348:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 26, 2020 12:25:24.477 [1126/122524.472:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 26, 2020 12:47:38.775 [1126/124738.770:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 26, 2020 13:04:05.675 [1126/130405.671:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 26, 2020 15:59:52.390 [1126/155952.383:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 26, 2020 16:36:11.571 [23184:13400:1126/163611.561:ERROR:socket_stream.cc(219)] Closing stream with result -2
+11월 26, 2020 16:40:12.441 [23184:13400:1126/164012.439:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 26, 2020 17:23:28.833 [1126/172328.822:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 26, 2020 17:36:39.848 [1126/173639.843:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 26, 2020 19:09:55.15 [1126/190955.009:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 26, 2020 19:26:51.76 [27552:8112:1126/192651.069:ERROR:socket_stream.cc(219)] Closing stream with result -2
+11월 26, 2020 19:57:12.818 [27552:8112:1126/195712.816:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 26, 2020 20:08:08.277 [1126/200808.257:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 27, 2020 09:48:39.736 NEW SESSION
+11월 27, 2020 09:48:39.737 [1127/094839.698:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 27, 2020 10:35:36.908 [1127/103536.898:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 27, 2020 13:01:06.747 NEW SESSION
+11월 27, 2020 13:01:06.748 [1127/130106.697:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 27, 2020 13:02:27.599 [21304:17560:1127/130227.598:ERROR:socket_stream.cc(219)] Closing stream with result -2
+11월 27, 2020 14:01:01.810 [21304:27660:1127/140101.600:ERROR:get_updates_processor.cc(257)] PostClientToServerMessage() failed during GetUpdates with error 2
+
+11월 27, 2020 14:51:33.644 NEW SESSION
+11월 27, 2020 14:51:33.657 [1127/145133.194:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 27, 2020 16:36:23.817 [1127/163623.811:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 27, 2020 19:41:19.392 [1127/194119.386:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 29, 2020 21:27:56.466 NEW SESSION
+11월 29, 2020 21:27:56.466 [14020:25488:1129/212756.458:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+11월 29, 2020 21:27:56.469 [14020:25488:1129/212756.460:ERROR:cache_util.cc(140)] Unable to move cache folder C:\Users\82109\AppData\Local\Google\Chrome\User Data\ShaderCache\GPUCache to C:\Users\82109\AppData\Local\Google\Chrome\User Data\ShaderCache\old_GPUCache_000
+11월 29, 2020 21:27:56.471 [14020:25488:1129/212756.460:ERROR:disk_cache.cc(184)] Unable to create cache
+11월 29, 2020 21:27:56.473 [14020:25488:1129/212756.460:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+11월 29, 2020 21:27:57.673 [24956:6300:1129/212757.669:ERROR:cache_util_win.cc(20)] Unable to move the cache: 액세스가 거부되었습니다. (0x5)
+11월 29, 2020 21:27:57.676 [24956:6300:1129/212757.670:ERROR:cache_util.cc(140)] Unable to move cache folder C:\Users\82109\AppData\Local\Google\Chrome\User Data\GrShaderCache\GPUCache to C:\Users\82109\AppData\Local\Google\Chrome\User Data\GrShaderCache\old_GPUCache_000
+11월 29, 2020 21:27:57.678 [24956:6300:1129/212757.670:ERROR:disk_cache.cc(184)] Unable to create cache
+11월 29, 2020 21:27:57.680 [24956:6300:1129/212757.670:ERROR:shader_disk_cache.cc(606)] Shader Cache Creation failed: -2
+11월 29, 2020 21:27:59.120 기존 브라우저 세션에서 여는 중입니다.
+11월 29, 2020 21:46:35.812 [1129/214635.801:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 29, 2020 22:18:38.379 [1129/221838.374:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 29, 2020 22:31:09.434 [1129/223109.427:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 29, 2020 22:48:52.54 [25380:21484:1129/224852.049:ERROR:socket_stream.cc(219)] Closing stream with result -2
+11월 29, 2020 23:10:23.85 [1129/231023.078:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 29, 2020 23:46:38.645 [1129/234638.639:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 30, 2020 24:32:55.433 NEW SESSION
+11월 30, 2020 24:32:55.434 [1130/003255.417:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 30, 2020 24:53:07.677 [1130/005307.664:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 30, 2020 10:04:00.979 NEW SESSION
+11월 30, 2020 10:04:00.983 [1130/100400.960:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 30, 2020 10:41:47.907 [1130/104147.896:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 30, 2020 10:58:27.846 [1130/105827.840:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+11월 30, 2020 12:07:44.955 NEW SESSION
+11월 30, 2020 12:07:44.956 [1130/120744.945:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 30, 2020 12:13:50.345 [8360:14944:1130/121350.334:ERROR:socket_stream.cc(219)] Closing stream with result -2
+11월 30, 2020 13:09:58.834 [8360:14944:1130/130958.830:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+11월 30, 2020 13:29:04.901 [1130/132904.892:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 30, 2020 14:08:48.861 [1130/140848.855:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 30, 2020 14:38:02.542 [1130/143802.536:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+11월 30, 2020 17:49:05.741 [1130/174905.728:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 01, 2020 10:11:12.901 NEW SESSION
+12월 01, 2020 10:11:12.901 [1201/101112.883:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 01, 2020 15:11:33.502 [1201/151133.494:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 02, 2020 09:57:51.600 NEW SESSION
+12월 02, 2020 09:57:51.601 [1202/095751.584:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 02, 2020 10:45:30.437 [1202/104530.432:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 02, 2020 11:12:37.691 [1202/111237.687:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 02, 2020 19:00:12.448 [1202/190012.445:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 03, 2020 09:56:35.53 NEW SESSION
+12월 03, 2020 09:56:35.54 [1203/095635.042:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 03, 2020 11:10:38.813 [1203/111038.808:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 03, 2020 13:12:45.890 [1203/131245.884:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 03, 2020 13:50:17.78 [1203/135017.072:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 03, 2020 15:00:13.741 [1203/150013.732:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 03, 2020 15:41:10.963 [1203/154110.949:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 04, 2020 24:37:02.572 NEW SESSION
+12월 04, 2020 24:37:02.572 [1204/003702.562:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 04, 2020 10:52:05.559 NEW SESSION
+12월 04, 2020 10:52:05.559 [1204/105205.539:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 07, 2020 10:06:07.347 NEW SESSION
+12월 07, 2020 10:06:07.347 [1207/100607.338:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 07, 2020 13:32:36.823 [1207/133236.815:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 08, 2020 10:20:27.20 NEW SESSION
+12월 08, 2020 10:20:27.20 [1208/102027.012:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 09, 2020 11:03:31.898 NEW SESSION
+12월 09, 2020 11:03:31.900 [1209/110331.863:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 09, 2020 11:57:46.360 [13352:11756:1209/115746.353:ERROR:CONSOLE(1)] "URIError: URI malformed URIError: URI malformed
+12월 09, 2020 11:57:46.375     at decodeURI (<anonymous>)
+12월 09, 2020 11:57:46.377     at ae._createBinding (devtools://devtools/bundled/persistence/persistence.js:1:34646)
+12월 09, 2020 11:57:46.378     at ae._computeNetworkStatus (devtools://devtools/bundled/persistence/persistence.js:1:32358)
+12월 09, 2020 11:57:46.380     at ae._onUISourceCodeAdded (devtools://devtools/bundled/persistence/persistence.js:1:31471)
+12월 09, 2020 11:57:46.382     at devtools://devtools/bundled/persistence/persistence.js:1:29584
+12월 09, 2020 11:57:46.384     at m.dispatchEventToListeners (devtools://devtools/bundled/common/common.js:1:14803)
+12월 09, 2020 11:57:46.385     at P.addUISourceCode (devtools://devtools/bundled/workspace/workspace.js:1:5162)
+12월 09, 2020 11:57:46.388     at P.addUISourceCodeWithProvider (devtools://devtools/bundled/bindings/bindings.js:1:7942)
+12월 09, 2020 11:57:46.390     at new ke (devtools://devtools/bundled/bindings/bindings.js:1:44889)
+12월 09, 2020 11:57:46.392     at ye._resourceAdded (devtools://devtools/bundled/bindings/bindings.js:1:43981)", source: devtools://devtools/bundled/host/host.js (1)
+12월 09, 2020 11:57:46.393 [13352:11756:1209/115746.354:ERROR:CONSOLE(1)] "URIError: URI malformed URIError: URI malformed
+12월 09, 2020 11:57:46.395     at decodeURI (<anonymous>)
+12월 09, 2020 11:57:46.401     at ae._createBinding (devtools://devtools/bundled/persistence/persistence.js:1:34646)
+12월 09, 2020 11:57:46.403     at ae._computeNetworkStatus (devtools://devtools/bundled/persistence/persistence.js:1:32358)
+12월 09, 2020 11:57:46.406     at ae._onUISourceCodeAdded (devtools://devtools/bundled/persistence/persistence.js:1:31471)
+12월 09, 2020 11:57:46.409     at devtools://devtools/bundled/persistence/persistence.js:1:29584
+12월 09, 2020 11:57:46.413     at m.dispatchEventToListeners (devtools://devtools/bundled/common/common.js:1:14803)
+12월 09, 2020 11:57:46.415     at P.addUISourceCode (devtools://devtools/bundled/workspace/workspace.js:1:5162)
+12월 09, 2020 11:57:46.417     at P.addUISourceCodeWithProvider (devtools://devtools/bundled/bindings/bindings.js:1:7942)
+12월 09, 2020 11:57:46.420     at new ke (devtools://devtools/bundled/bindings/bindings.js:1:44889)
+12월 09, 2020 11:57:46.422     at ye._resourceAdded (devtools://devtools/bundled/bindings/bindings.js:1:43981)", source: devtools://devtools/bundled/host/host.js (1)
+12월 09, 2020 11:57:46.424 [13352:11756:1209/115746.355:ERROR:CONSOLE(1)] "URIError: URI malformed URIError: URI malformed
+12월 09, 2020 11:57:46.426     at decodeURI (<anonymous>)
+12월 09, 2020 11:57:46.428     at ae._createBinding (devtools://devtools/bundled/persistence/persistence.js:1:34646)
+12월 09, 2020 11:57:46.430     at ae._computeNetworkStatus (devtools://devtools/bundled/persistence/persistence.js:1:32358)
+12월 09, 2020 11:57:46.431     at ae._onUISourceCodeAdded (devtools://devtools/bundled/persistence/persistence.js:1:31471)
+12월 09, 2020 11:57:46.433     at devtools://devtools/bundled/persistence/persistence.js:1:29584
+12월 09, 2020 11:57:46.434     at m.dispatchEventToListeners (devtools://devtools/bundled/common/common.js:1:14803)
+12월 09, 2020 11:57:46.442     at P.addUISourceCode (devtools://devtools/bundled/workspace/workspace.js:1:5162)
+12월 09, 2020 11:57:46.446     at P.addUISourceCodeWithProvider (devtools://devtools/bundled/bindings/bindings.js:1:7942)
+12월 09, 2020 11:57:46.450     at new ke (devtools://devtools/bundled/bindings/bindings.js:1:44889)
+12월 09, 2020 11:57:46.456     at ye._resourceAdded (devtools://devtools/bundled/bindings/bindings.js:1:43981)", source: devtools://devtools/bundled/host/host.js (1)
+12월 09, 2020 22:02:33.403 [1209/220233.392:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 10, 2020 09:57:25.606 NEW SESSION
+12월 10, 2020 09:57:25.606 [1210/095725.597:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 10, 2020 11:47:53.742 [1210/114753.738:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 15, 2020 10:34:41.13 NEW SESSION
+12월 15, 2020 10:34:41.13 [1215/103441.000:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 15, 2020 11:42:59.969 [1215/114259.958:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 15, 2020 16:57:37.911 [1215/165737.903:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 16, 2020 09:53:41.164 NEW SESSION
+12월 16, 2020 09:53:41.167 [1216/095341.149:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.641 [1216/173837.618:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\e9632bc3-5380-414e-89af-66c6636e9086: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.669 [1216/173837.634:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\73c549ca-938b-4959-93e7-22c7741a9550: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.670 [1216/173837.654:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\a854fc82-52c5-4cb0-a564-758ace07b9df: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.677 [1216/173837.675:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\955ec39a-c0a9-4305-b048-bce26645db8c: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.694 [1216/173837.689:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\460b465e-b839-4a41-bbda-b9fd6f81db7a: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.711 [1216/173837.703:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\1e38b8ef-a8a0-4bd8-957f-b5f108436a29: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.730 [1216/173837.713:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\c19621dd-f34b-4d5e-89ee-2f6733f42f68: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.752 [1216/173837.750:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\bc223c8d-40e7-43e7-a2ed-a09b2db80878: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.762 [1216/173837.760:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\c30b8a43-fa0b-45d2-8f96-fd2632f1286c: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.770 [1216/173837.769:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\a4717787-3e8c-46ce-a9d1-63ee86b5dcc4: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.784 [1216/173837.783:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\09a67856-9dba-4000-b68f-1d20f98cf25b: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.792 [1216/173837.790:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\fc381e12-3ffc-4250-afc9-a5c14d19b2e5: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.811 [1216/173837.807:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\02959fdb-8898-4555-a1ea-4ecaf86a89f5: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.821 [1216/173837.820:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\d4816949-daef-48fe-9080-a6d8de22bd5c: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.832 [1216/173837.832:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\af99dd02-9b44-4f9c-8f15-30051e4034e9: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.839 [1216/173837.839:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\4cf0f9d8-7fda-46e2-aa96-16cdd9ae3761: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.848 [1216/173837.847:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\7303804e-9133-4f7f-a056-39126c021ec8: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.854 [1216/173837.853:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\d56996e1-72ea-4694-b6e6-dfe4088ed8f1: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 16, 2020 17:38:37.861 [1216/173837.860:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\82109\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\dcc25772-9f73-4504-8c9f-9f7a4e166713: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 17, 2020 14:18:25.469 NEW SESSION
+12월 17, 2020 14:18:25.472 [1217/141825.432:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+12월 17, 2020 21:11:32.735 [1217/211132.730:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 20, 2020 22:51:21.579 NEW SESSION
+12월 20, 2020 22:51:21.580 [1220/225121.562:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 21, 2020 09:59:04.478 NEW SESSION
+12월 21, 2020 09:59:04.479 [1221/095904.464:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 22, 2020 10:22:01.601 NEW SESSION
+12월 22, 2020 10:22:01.602 [1222/102201.586:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+12월 30, 2020 09:54:44.451 NEW SESSION
+12월 30, 2020 09:54:44.451 [1230/095444.439:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)
+
+1월 16, 2021 16:07:33.446 NEW SESSION
+1월 16, 2021 16:07:33.447 [0116/160733.438:ERROR:directory_reader_win.cc(43)] FindFirstFile: 지정된 경로를 찾을 수 없습니다. (0x3)

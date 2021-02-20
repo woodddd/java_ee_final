@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var count = 0;
+
+function appendItem(){
+	count++;
+	var newItem = document.createElement("div");//div생성
+	newItem.setAttribute("id","item_" + count);//div 속성으로 id=item_(count) 를넣어줌
+	newItem.setAttribute("style","border:1px dotted red");//div 속성으로 style과 값을넣어줌
+	
+	var html = "새로 추가된 아이템 [" + count + "] <input type='button' value='삭제' onclick='removeItem("+count+")'/>";
+	newItem.innerHTML = html;
+	
+	var itemListNode = document.getElementById("itemList");
+	itemListNode.appendChild(newItem);
+	
+}
+
+function removeItem(count){
+	var item = document.getElementById("item_" + count);//div태그
+	if(item != null){//아이디를 통해 저장된 태그가 item에 있다면,
+		item.parentNode.removeChild(item); //항상 무언가를 지우기 위해 removeChild를 하면 자식노드를 삭제하는 것이므로, 부모 노드로 접근해야 한다.(parentNode)
+	}
+}
+</script>
+</head>
+<body>
+<input type="button" value="추가" onclick="appendItem()"/>
+<div id="itemList" style="border:1px double blue;"></div>
+</body>
+</html>

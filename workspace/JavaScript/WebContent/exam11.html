@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function f(x,y){
+	var z = x + y;
+	
+	//값이 10보다 작을 경우,실행중단
+	if(z < 10){
+		return;
+	}
+	return z;
+}
+
+let a = f(2,1);
+let b = f(5,7);
+let c = f(10,5);
+
+document.write("<h3>" + a + "</h3>"); //2 + 1 의결과인 3은 if문의 조건을 만족하므로 값을 안갖은 상태로 return 되어 undefined 가나옴
+document.write("<h3>" + b + "</h3>"); //10 이상의 값을 리턴받으므로 z 의 값을 가지고 리턴함.
+document.write("<h3>" + c + "</h3>"); //10 이상의 값을 리턴받으므로 z 의 값을 가지고 리턴함.
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

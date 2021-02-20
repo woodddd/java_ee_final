@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="ajaxExam01.css">
+<!-- rel - relation(관계) 
+rel="stylesheet" - css 파일을 가져올거다. 
+
+href- Hypertext reference -->
+<script type="text/javascript" src="ajaxExam01.js">
+
+</script>
+</head>
+<body>
+<div id="displayArea">이곳의 내용이 변경</div> 
+<!-- displayArea 가 css에 의해 display - none 설정으로 영역을 없애주었었다. 그 후,
+startMethod() 가 실행되면 자바스크립트에서 
+var div = document.getElementById("displayArea");
+			
+			div.innerHTML = httpRequest.responseText;
+			div.style.display = "block";
+를 실행하여 이미지를 넣어준 후, block을 지정하여 해당 영역이 보이게한다. -->
+<form>
+	<input type="button" value="표시" onclick="startMethod()">
+</form>
+</body>
+</html>
